@@ -31,6 +31,16 @@ while (
     action = prompt(
       `What would you like to do next? 'New' to add another item to your list, 'List' to see your current list, 'Delete' to delete an item from your list, or 'Quit' to quit the app.`
     ).toLowerCase();
+    while (
+      action !== "new" &&
+      action !== "list" &&
+      action !== "delete" &&
+      action != "quit"
+    ) {
+      action = prompt(
+        "Enter new, list, delete, or quit to exit app."
+      ).toLowerCase();
+    }
   } else if (action === "list") {
     console.log(`Your To Do List:`);
     for (let item of todo) {
@@ -39,6 +49,16 @@ while (
     action = prompt(
       `What would you like to do next? 'New' to add another item to your list, 'List' to see your current list, 'Delete' to delete an item from your list, or 'Quit' to quit the app.`
     ).toLowerCase();
+    while (
+      action !== "new" &&
+      action !== "list" &&
+      action !== "delete" &&
+      action != "quit"
+    ) {
+      action = prompt(
+        "Enter new, list, delete, or quit to exit app."
+      ).toLowerCase();
+    }
   } else if (action === "delete") {
     let deleteItem = prompt(
       "Which task would you like to delete?"
@@ -53,5 +73,15 @@ while (
     action = prompt(
       `What would you like to do next? 'New' to add another item to your list, 'List' to see your current list, 'Delete' to delete an item from your list, or 'Quit' to quit the app.`
     ).toLowerCase();
+    while (
+      action !== "new" &&
+      action !== "list" &&
+      action !== "delete" &&
+      action != "quit"
+    ) {
+      action = prompt(
+        "Enter new, list, delete, or quit to exit app."
+      ).toLowerCase();
+    }
   }
 }
